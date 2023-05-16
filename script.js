@@ -13,7 +13,7 @@ $(document).ready(function() {
     var partsHTML = "";
     for (var i = 0; i < computerParts.length; i++) {
       var part = computerParts[i];
-      partsHTML += '<div class="col-lg-4 col-md-6 mb-4">';
+      partsHTML += '<div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">';
       partsHTML += '<div class="card">';
       partsHTML += '<img src="' + part.image + '" class="card-img-top ' + (part.size ? part.size : '') + '" alt="' + part.name + '">';
       partsHTML += '<div class="card-body">';
@@ -23,6 +23,8 @@ $(document).ready(function() {
       partsHTML += '</div>';
       partsHTML += '</div>';
     }
+
+
 
     // Add the generated HTML to the partsList div
     $('#partsList').html(partsHTML);

@@ -5,5 +5,7 @@
 ## Technologies use:
 - Html
 - CSS
+- Javascript
 - Bootstrap
 - Jquery
+- AOS
